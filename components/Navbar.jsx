@@ -1,0 +1,84 @@
+import React from "react";
+import Link from "next/link";
+ 
+const links = [
+    {
+        title: "Home",
+        url: "#",
+    },
+    {
+        title: "Products",
+        url: "#",
+    },
+    {
+        title: "Faq",
+        url: "#",
+    },
+    {
+        title: "About",
+        url: "#",
+    },
+    // add more data here ...
+];
+ 
+const Navbar = () => {
+    return (
+        <header className="sticky top-0 bg-[#0000] backdrop-blur-sm opacity-100 z-40 isolate overflow-hidden py-3 font-swim">
+            <div className="mx-auto flex max-w-full items-center justify-between px-6 md:max-w-[94%] lg:px-8">
+                <div className="flex">
+                    <Link href="/" className="-m-1.5 p-1.5 text-2xl text-black">
+                        Explorely
+                    </Link>
+                </div>
+                <nav className="hidden lg:flex lg:gap-x-1 bg-[#ffffff33] backdrop-blur-sm opacity-100 p-1.5 shadow-md rounded-3xl">
+                    {links.map((link, i) => (
+                        <Link
+                            key={i}
+                            href={link.url}
+                            className="text-base font-medium leading-6 text-gray-900 hover:bg-white/80 px-4 py-2 rounded-3xl"
+                        >
+                            {link.title}
+                        </Link>
+                    ))}
+                </nav>
+                <div className="hidden lg:flex lg:items-center">
+                    <Link
+                        href="#"
+                        className="-my-2.5 inline-flex justify-center rounded-3xl bg-white px-6 py-1.5 text-base text-black"
+                    >
+                      Learn more
+                    </Link>
+                    <Link
+                        href="#"
+                        className="-my-2.5 ml-4 inline-flex justify-center rounded-3xl bg-[#96d279] px-6 py-1.5 text-base text-black"
+                    >
+                        <span>
+                            Get treks <span aria-hidden="true">→</span>
+                        </span>
+                    </Link>
+                </div>
+                <div className="flex lg:hidden">
+                    <button type="button" className="-m-2.5 rounded-md p-4 text-gray-900">
+                        <span className="sr-only">Open main menu</span>
+                        <svg
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+    );
+};
+ 
+export default Navbar;

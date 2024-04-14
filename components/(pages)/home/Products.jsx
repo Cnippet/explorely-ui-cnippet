@@ -1,0 +1,115 @@
+import React from "react";
+import Image from "next/image";
+import Hero1 from "@/public/p1.jpg";
+import Hero2 from "@/public/p2.jpg";
+import Hero3 from "@/public/p3.jpg";
+
+const features = [
+    {
+        id: 1,
+        title: "Push to deploy",
+        image: Hero1,
+        para: "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+        href: "#",
+    },
+    {
+        id: 2,
+        title: "SSL certificates",
+        image: Hero2,
+        para: "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+        href: "#",
+    },
+    {
+        id: 3,
+        title: "Simple queues",
+        image: Hero3,
+        para: "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+        href: "#",
+    },
+];
+
+const List3 = () => {
+    return (
+        <section className="bg-[#f4f1ec] relative py-24 sm:py-28 font-swir z-20">
+            <div className="mx-auto max-w-full md:max-w-[85%] px-6 lg:px-8">
+                <div className=" absolute top-20 left-0 z-0">
+                    <svg viewBox="0 0 24 24" fill="none" className="w-[28rem] h-[28rem]" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3V14.8C6 15.9201 6 16.4802 6.21799 16.908C6.40973 17.2843 6.71569 17.5903 7.09202 17.782C7.51984 18 8.0799 18 9.2 18H15M21 18H18M18 21V9.2C18 8.0799 18 7.51984 17.782 7.09202C17.5903 6.71569 17.2843 6.40973 16.908 6.21799C16.4802 6 15.9201 6 14.8 6H9M3 6H6" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <div className="mx-auto flex max-w-6xl justify-between relative">
+                    <div className="flex flex-col gap-8 justify-between">
+                        <div className="text-base flex gap-4 bg-white text-gray-400 rounded-3xl w-fit py-2 px-4">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="m9 9 5 12 1.8-5.2L21 14Z" />
+                                <path d="M7.2 2.2 8 5.1" />
+                                <path d="m5.1 8-2.9-.8" />
+                                <path d="M14 4.1 12 6" />
+                                <path d="m6 12-1.9 2" />
+                            </svg>
+                            Categories
+                        </div>
+                        <p className="mt-2 text-3xl font-bold text-[#96d279] sm:text-5xl">
+                            Beverage universe
+                        </p>
+
+                    </div>
+
+                    <p className="mt-auto font-swim max-w-xl text-right text-2xl leading-8 text-gray-600">
+                        Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+                        Suspendisse.
+                    </p>
+                </div>
+                <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-12 lg:max-w-none">
+                    <dl className="mx-auto grid max-w-xl grid-cols-1 gap-x-2 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                        {features.map((feature) => (
+                            <div key={feature.id} className="flex flex-col md:p-3">
+                                <dt className="flex flex-col gap-y-5 text-3xl font-swim text-black/90 leading-7">
+                                    <a
+                                        href={feature.href}
+                                        className="relative overflow-hidden rounded-2xl"
+                                    >
+                                        <Image
+                                            src={feature.image}
+                                            alt="post-img"
+                                            className="aspect-video w-full object-cover sm:aspect-[2/1] lg:aspect-[3/1.65] hover:scale-110 transform ease-in-out duration-300"
+                                        />
+                                    </a>
+                                    {feature.title}
+                                </dt>
+                                <dd className="mt-8 flex flex-auto flex-col text-base leading-7 text-gray-500">
+                                    <p className="flex-auto line-clamp-2 text-lg">{feature.para}</p>
+                                    <p className="mt-6">
+                                        <a
+                                            href="#"
+                                            className="-my-2.5 inline-flex justify-center rounded-3xl bg-[#96d279] px-6 py-1.5 text-base text-black"
+                                        >
+                                            See details
+                                        </a>
+                                        <a
+                                            href="#"
+                                            className="-my-2.5 ml-4 inline-flex justify-center rounded-3xl bg-white px-6 py-1.5 text-base text-black"
+                                        >
+                                            Add to cart
+                                        </a>
+
+                                    </p>
+                                </dd>
+                            </div>
+                        ))}
+                    </dl>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default List3;

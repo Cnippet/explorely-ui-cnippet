@@ -7,7 +7,15 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     extend: {
+      fontSize: {
+        md: '1.025rem',
+      },
+      fontFamily: {
+          swim: ["switzer-med"],
+          swir: ["switzer-reg"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
