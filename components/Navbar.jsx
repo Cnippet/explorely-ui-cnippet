@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
- 
+
 const links = [
     {
         title: "Home",
@@ -20,22 +20,22 @@ const links = [
     },
     // add more data here ...
 ];
- 
+
 const Navbar = () => {
     return (
-        <header className="sticky top-0 bg-[#0000] backdrop-blur-sm opacity-100 z-40 isolate overflow-hidden py-3 font-swim">
+        <header className="sticky top-0 isolate z-40 overflow-hidden bg-[#0000] py-3 font-swim opacity-100 backdrop-blur-sm">
             <div className="mx-auto flex max-w-full items-center justify-between px-6 md:max-w-[94%] lg:px-8">
                 <div className="flex">
                     <Link href="/" className="-m-1.5 p-1.5 text-2xl text-black">
                         Explorely
                     </Link>
                 </div>
-                <nav className="hidden lg:flex lg:gap-x-1 bg-[#ffffff33] backdrop-blur-sm opacity-100 p-1.5 shadow-md rounded-3xl">
+                <nav className="hidden rounded-3xl bg-[#ffffff33] p-1.5 opacity-100 shadow-md backdrop-blur-sm lg:flex lg:gap-x-1">
                     {links.map((link, i) => (
                         <Link
                             key={i}
                             href={link.url}
-                            className="text-base font-medium leading-6 text-gray-900 hover:bg-white/80 px-4 py-2 rounded-3xl"
+                            className="rounded-3xl px-4 py-2 text-base font-medium leading-6 text-gray-900 hover:bg-white/80"
                         >
                             {link.title}
                         </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                         href="#"
                         className="-my-2.5 inline-flex justify-center rounded-3xl bg-white px-6 py-1.5 text-base text-black"
                     >
-                      Learn more
+                        Learn more
                     </Link>
                     <Link
                         href="#"
@@ -80,5 +80,5 @@ const Navbar = () => {
         </header>
     );
 };
- 
+
 export default Navbar;

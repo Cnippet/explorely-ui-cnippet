@@ -30,14 +30,36 @@ const features = [
 
 const List3 = () => {
     return (
-        <section className="bg-[#f4f1ec] relative py-24 sm:py-28 font-swir z-20">
-            <div className="mx-auto max-w-full md:max-w-[85%] px-6 lg:px-8">
-                <div className=" absolute top-20 left-0 z-0">
-                    <svg viewBox="0 0 24 24" fill="none" className="w-[28rem] h-[28rem]" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 3V14.8C6 15.9201 6 16.4802 6.21799 16.908C6.40973 17.2843 6.71569 17.5903 7.09202 17.782C7.51984 18 8.0799 18 9.2 18H15M21 18H18M18 21V9.2C18 8.0799 18 7.51984 17.782 7.09202C17.5903 6.71569 17.2843 6.40973 16.908 6.21799C16.4802 6 15.9201 6 14.8 6H9M3 6H6" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        <section className="relative z-20 bg-[#f4f1ec] py-24 font-swir sm:py-28">
+            <div className="mx-auto max-w-full px-6 md:max-w-[85%] lg:px-8">
+                <div className=" absolute left-0 top-20 z-0">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="h-[28rem] w-[28rem]"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                        <g
+                            id="SVGRepo_tracerCarrier"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                            {" "}
+                            <path
+                                d="M6 3V14.8C6 15.9201 6 16.4802 6.21799 16.908C6.40973 17.2843 6.71569 17.5903 7.09202 17.782C7.51984 18 8.0799 18 9.2 18H15M21 18H18M18 21V9.2C18 8.0799 18 7.51984 17.782 7.09202C17.5903 6.71569 17.2843 6.40973 16.908 6.21799C16.4802 6 15.9201 6 14.8 6H9M3 6H6"
+                                stroke="#fafafa"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>{" "}
+                        </g>
+                    </svg>
                 </div>
-                <div className="mx-auto flex max-w-6xl justify-between relative">
-                    <div className="flex flex-col gap-8 justify-between">
-                        <div className="text-base flex gap-4 bg-white text-gray-400 rounded-3xl w-fit py-2 px-4">
+                <div className="relative mx-auto flex max-w-6xl justify-between">
+                    <div className="flex flex-col justify-between gap-8">
+                        <div className="flex w-fit gap-4 rounded-3xl bg-white px-4 py-2 text-base text-gray-400">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -60,10 +82,9 @@ const List3 = () => {
                         <p className="mt-2 text-3xl font-bold text-[#96d279] sm:text-5xl">
                             Beverage universe
                         </p>
-
                     </div>
 
-                    <p className="mt-auto font-swim max-w-xl text-right text-2xl leading-8 text-gray-600">
+                    <p className="mt-auto max-w-xl text-right font-swim text-2xl leading-8 text-gray-600">
                         Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
                         Suspendisse.
                     </p>
@@ -72,7 +93,7 @@ const List3 = () => {
                     <dl className="mx-auto grid max-w-xl grid-cols-1 gap-x-2 gap-y-16 lg:max-w-none lg:grid-cols-3">
                         {features.map((feature) => (
                             <div key={feature.id} className="flex flex-col md:p-3">
-                                <dt className="flex flex-col gap-y-5 text-3xl font-swim text-black/90 leading-7">
+                                <dt className="flex flex-col gap-y-5 font-swim text-3xl leading-7 text-black/90">
                                     <a
                                         href={feature.href}
                                         className="relative overflow-hidden rounded-2xl"
@@ -80,13 +101,15 @@ const List3 = () => {
                                         <Image
                                             src={feature.image}
                                             alt="post-img"
-                                            className="aspect-video w-full object-cover sm:aspect-[2/1] lg:aspect-[3/1.65] hover:scale-110 transform ease-in-out duration-300"
+                                            className="aspect-video w-full transform object-cover duration-300 ease-in-out hover:scale-110 sm:aspect-[2/1] lg:aspect-[3/1.65]"
                                         />
                                     </a>
                                     {feature.title}
                                 </dt>
                                 <dd className="mt-8 flex flex-auto flex-col text-base leading-7 text-gray-500">
-                                    <p className="flex-auto line-clamp-2 text-lg">{feature.para}</p>
+                                    <p className="line-clamp-2 flex-auto text-lg">
+                                        {feature.para}
+                                    </p>
                                     <p className="mt-6">
                                         <a
                                             href="#"
@@ -100,7 +123,6 @@ const List3 = () => {
                                         >
                                             Add to cart
                                         </a>
-
                                     </p>
                                 </dd>
                             </div>

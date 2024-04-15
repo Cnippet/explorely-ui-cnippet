@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import S1 from '@/public/svg/s2.svg';
+import S1 from "@/public/svg/s2.svg";
 
 const features = [
     {
@@ -13,7 +13,7 @@ const features = [
                 fill="currentColor"
                 width="24"
                 height="24"
-                className="w-8 h-8 text-gray-700"
+                className="h-8 w-8 text-gray-700"
             >
                 <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z"></path>
             </svg>
@@ -29,13 +29,13 @@ const features = [
                 fill="currentColor"
                 width="24"
                 height="24"
-                className="w-8 h-8 text-gray-700"
+                className="h-8 w-8 text-gray-700"
             >
                 <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path>
                 <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                 ></path>
             </svg>
         ),
@@ -50,7 +50,7 @@ const features = [
                 fill="currentColor"
                 width="24"
                 height="24"
-                className="w-8 h-8 text-gray-700"
+                className="h-8 w-8 text-gray-700"
             >
                 <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zm4.211-10.724a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
             </svg>
@@ -60,15 +60,15 @@ const features = [
 
 const List1 = () => {
     return (
-        <section className="relative isolate bg-[#f5f5f5] py-24 sm:py-28 font-swim overflow-hidden">
-            <Image 
+        <section className="relative isolate overflow-hidden bg-[#f5f5f5] py-24 font-swim sm:py-28">
+            <Image
                 src={S1}
                 alt=""
-                className="w-[16rem] h-[16rem] absolute -right-5 -top-5 -z-10"
+                className="absolute -right-5 -top-5 -z-10 h-[16rem] w-[16rem]"
             />
-            <div className="mx-auto max-w-full md:max-w-[83%] px-6 lg:px-8">
-                <div className="mx-auto pb-16 flex justify-between relative">
-                    <div className="flex flex-col gap-8 justify-between">
+            <div className="mx-auto max-w-full px-6 md:max-w-[83%] lg:px-8">
+                <div className="relative mx-auto flex justify-between pb-16">
+                    <div className="flex flex-col justify-between gap-8">
                         <svg
                             viewBox="0 0 24 24"
                             fill="none"
@@ -98,7 +98,7 @@ const List1 = () => {
                         </p>
                     </div>
 
-                    <p className="mt-auto font-swim max-w-xl text-right text-2xl leading-8 text-gray-600">
+                    <p className="mt-auto max-w-xl text-right font-swim text-2xl leading-8 text-gray-600">
                         Explore the magic behind our unique elixirs: uncover the science and
                         artistry in every sip
                     </p>
@@ -106,17 +106,16 @@ const List1 = () => {
 
                 <hr />
 
-                <div className="mx-auto pt-16 max-w-2xl lg:max-w-none md:px-10">
+                <div className="mx-auto max-w-2xl pt-16 md:px-10 lg:max-w-none">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-20 gap-y-16 lg:max-w-none lg:grid-cols-3">
                         {features.map((feature, i) => (
                             <div key={i} className="flex flex-col">
-                                <dt className="flex  gap-3 text-xl text-gray-700 flex-col">
+                                <dt className="flex  flex-col gap-3 text-xl text-gray-700">
                                     {feature.svg}
                                     {feature.title}
                                 </dt>
                                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-500">
                                     <p className="flex-auto">{feature.para}</p>
-                                    
                                 </dd>
                             </div>
                         ))}
