@@ -10,7 +10,7 @@ const config: Config = {
     
     extend: {
       fontSize: {
-        md: '1.025rem',
+        md: '1.085rem',
       },
       fontFamily: {
           swim: ["switzer-med"],

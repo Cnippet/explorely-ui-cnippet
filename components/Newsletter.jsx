@@ -21,7 +21,7 @@ const Newsletter = () => {
 
                     <form
                         action=""
-                        className="col-span-5 mt-6 max-w-md md:mx-auto lg:py-2"
+                        className="news col-span-5 mt-6 max-w-md md:mx-auto lg:py-2"
                     >
                         <div className="flex gap-x-3">
                             <label htmlFor="email-address" className="sr-only">

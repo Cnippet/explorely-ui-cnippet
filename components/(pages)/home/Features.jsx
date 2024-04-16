@@ -66,7 +66,7 @@ const Feature = () => {
                 alt=""
                 className="absolute -right-5 -top-5 -z-10 h-[16rem] w-[16rem]"
             />
-            <div className="mx-auto max-w-full px-6 md:max-w-[83%] lg:px-8">
+            <div className="mx-auto max-w-full px-6 md:max-w-[85%] lg:px-8">
                 <div className="relative mx-auto flex justify-between pb-16">
                     <div className="flex flex-col justify-between gap-8">
                         <svg

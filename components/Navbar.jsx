@@ -17,7 +17,7 @@ const links = [
     },
     {
         title: "Contact",
-        url: "#",
+        url: "/contact",
     },
     // add more data here ...
 ];
