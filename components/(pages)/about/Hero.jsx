@@ -15,27 +15,8 @@ const Hero = () => {
         <section className="relative isolate z-20 -mt-[6.5rem] bg-[#f4f1ec] py-24 font-swir sm:py-28">
             <div className="mx-auto max-w-full px-6 md:max-w-[85%] lg:px-8">
                 <div className="relative mx-auto mt-16 flex max-w-6xl flex-col items-center justify-between gap-6">
-                    <div className="flex w-fit gap-4 rounded-3xl bg-white px-4 py-2 text-base text-gray-400">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <path d="m9 9 5 12 1.8-5.2L21 14Z" />
-                            <path d="M7.2 2.2 8 5.1" />
-                            <path d="m5.1 8-2.9-.8" />
-                            <path d="M14 4.1 12 6" />
-                            <path d="m6 12-1.9 2" />
-                        </svg>
-                        Categories
-                    </div>
-                    <p className="mt-2 text-3xl font-bold text-[#96d279] sm:text-5xl">
+                    
+                    <p className="mt-2 text-3xl font-bold text-[#96d279] sm:text-6xl">
                         About us
                     </p>
 

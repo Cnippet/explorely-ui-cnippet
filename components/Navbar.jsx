@@ -51,7 +51,7 @@ const Navbar = () => {
                     </Link> */}
                     <Link
                         href="#"
-                        className="-my-2.5 ml-4 inline-flex justify-center rounded-3xl bg-[#96d279] px-6 py-1.5 text-base text-black"
+                        className="inline-flex justify-center rounded-3xl bg-[#96d279] px-6 py-1.5 text-base text-black"
                     >
                         <span>
                             Get treks <span aria-hidden="true">→</span>

@@ -26,7 +26,7 @@ const teams = [
 
 const Team = () => {
     return (
-        <section className="relative z-20 -mt-[6.5rem] bg-white  py-24 font-swir sm:py-24">
+        <section className="relative z-20 bg-[#f5f5f5] py-24 font-swir sm:py-24">
             <div className="mx-auto max-w-full px-6 md:max-w-[85%] lg:px-8">
                 <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-6">
                     <p className="text-3xl font-bold text-black sm:text-5xl">
