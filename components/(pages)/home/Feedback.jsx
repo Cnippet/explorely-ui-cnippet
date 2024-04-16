@@ -33,7 +33,7 @@ const feedbacks = [
     },
 ];
 
-const C4 = () => {
+const Feedback = () => {
     return (
         <section className="relative isolate overflow-hidden bg-[#f4f1ec] font-swir">
             <div>
@@ -163,4 +163,4 @@ const C4 = () => {
     );
 };
 
-export default C4;
+export default Feedback;

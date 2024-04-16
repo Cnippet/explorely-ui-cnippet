@@ -58,7 +58,7 @@ const features = [
     },
 ];
 
-const List1 = () => {
+const Feature = () => {
     return (
         <section className="relative isolate overflow-hidden bg-[#f5f5f5] py-24 font-swim sm:py-28">
             <Image
@@ -126,4 +126,4 @@ const List1 = () => {
     );
 };
 
-export default List1;
+export default Feature;

@@ -43,7 +43,7 @@ const fea = [
     "Natural hydration",
 ];
 
-const List3 = () => {
+const Main = () => {
     const news = [...features, ...features];
 
     return (
@@ -278,7 +278,7 @@ const List3 = () => {
     );
 };
 
-export default List3;
+export default Main;
 
 const Button = () => {
     const swiper = useSwiper();

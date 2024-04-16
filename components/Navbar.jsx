@@ -13,7 +13,7 @@ const links = [
 
     {
         title: "About",
-        url: "#",
+        url: "/about",
     },
     {
         title: "Contact",

@@ -90,7 +90,7 @@ const features = [
     },
 ];
 
-const List3 = () => {
+const All = () => {
     return (
         <section className="relative z-20 bg-[#f4f1ec] py-24 font-swir sm:py-28">
             <div className="mx-auto max-w-full px-6 md:max-w-[85%] lg:px-8">
@@ -175,4 +175,4 @@ const List3 = () => {
     );
 };
 
-export default List3;
+export default All;
