@@ -47,7 +47,7 @@ const links = [
     },
 ];
 
-const Footer2 = () => {
+const Footer = () => {
     return (
         <footer className="relative isolate bg-[#f0f4ed] pb-4 pt-10">
             <div className=" mx-auto mb-6 max-w-full px-6 sm:justify-between md:flex md:max-w-[97%] lg:px-8">
@@ -249,4 +249,4 @@ const Footer2 = () => {
     );
 };
 
-export default Footer2;
+export default Footer;
